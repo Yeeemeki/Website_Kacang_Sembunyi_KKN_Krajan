@@ -11,7 +11,7 @@
   <title>Kacang Sembunyi Krajan Snack Khas Dusun Krajan, Pacitan</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="assets/img/Logo_Kacang_Sembunyi.png">
+  <link rel="icon" type="image/jpeg" sizes="50x50" href="assets/img/Logo_Kacang_Sembunyi.png">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -32,8 +32,7 @@
         <li><a href="#beranda" class="active" data-nav>Beranda</a></li>
         <li><a href="#profil" data-nav>Profil</a></li>
         <li><a href="#produk" data-nav>Produk</a></li>
-        <li><a href="#galeri" data-nav>Galeri</a></li>
-        <li><a href="#kontak" class="nav-cta" data-nav>Pesan Sekarang</a></li>
+        <li><a href="#pesan" class="nav-cta" data-nav>Pesan Sekarang</a></li>
       </ul>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigasi" aria-expanded="false">
@@ -62,12 +61,12 @@
       </h1>
       <p class="hero-subtitle">
         Nikmati kelezatan Snack Kacang Sembunyi camilan renyah berbahan kacang pilihan,
-        dibalut manisnya gula merah asli. Dibuat dengan resep turun-temurun oleh masyarakat
+        dibalut manisnya caramel. Dibuat dengan resep turun-temurun oleh masyarakat
         Dusun Krajan, Pacitan.
       </p>
       <div class="hero-cta-group">
         <a href="#produk" class="btn btn-outline">🥜 Lihat Produk</a>
-        <a href="#kontak" class="btn btn-primary">Pesan Disini →</a>
+        <a href="#pesan" class="btn btn-primary">Pesan Disini →</a>
       </div>
     </div>
 
@@ -78,12 +77,14 @@
   </section>
 
   <!-- ==================== TENTANG KAMI ==================== -->
+  <!-- Background: ibu-ibu pacitan.jpg | Visual Element: foto_bersama.jpeg -->
   <section class="section about" id="profil">
-    <div class="container">
+    <div class="about-bg-overlay"></div>
+    <div class="container about-container">
       <div class="about-grid">
         <div class="about-image-wrapper animate-on-scroll">
-          <img src="assets/img/ibu-ibu pacitan.jpg"
-            alt="Ibu-ibu Dusun Krajan memproduksi kacang sembunyi pemberdayaan masyarakat lokal" width="600"
+          <img src="assets/img/foto_bersama .jpeg"
+            alt="Foto bersama tim KKN dan masyarakat Dusun Krajan dalam pemberdayaan UMKM" width="600"
             height="450" loading="lazy">
         </div>
         <div class="about-content">
@@ -121,8 +122,10 @@
   </section>
 
   <!-- ==================== PRODUK KAMI ==================== -->
+  <!-- Background: pantaiKlayar.jpg -->
   <section class="section produk" id="produk">
-    <div class="container">
+    <div class="produk-bg-overlay"></div>
+    <div class="container produk-container">
       <div class="section-header">
         <span class="section-label animate-on-scroll">Produk Kami</span>
         <h2 class="section-title animate-on-scroll delay-1">Snack Kacang Sembunyi</h2>
@@ -177,82 +180,61 @@
     </div>
   </section>
 
-  <!-- ==================== GALERI PESONA LOKAL ==================== -->
-  <section class="section galeri" id="galeri">
-    <div class="container">
+  <!-- ==================== PESAN (CTA) ==================== -->
+  <!-- Background: jalanPantaiSrau.jpg -->
+  <section class="section pesan" id="pesan">
+    <div class="pesan-content">
       <div class="section-header">
-        <span class="section-label animate-on-scroll">Pesona Lokal</span>
-        <h2 class="section-title animate-on-scroll delay-1">Keindahan Alam Pacitan</h2>
-        <p class="section-subtitle animate-on-scroll delay-2">
-          Jelajahi pesona alam dan budaya Pacitan dan jangan lupa bawa pulang oleh-olehnya!
+        <span class="section-label pesan-label animate-on-scroll">Pesan Sekarang</span>
+        <h2 class="section-title pesan-title animate-on-scroll delay-1">Hubungi Kami</h2>
+        <p class="section-subtitle pesan-subtitle animate-on-scroll delay-2">
+          Tertarik dengan Kacang Sembunyi? Hubungi kami langsung melalui media sosial atau WhatsApp untuk pemesanan!
         </p>
       </div>
 
-      <div class="galeri-grid">
-        <!-- Item 1 — Jalan Pantai Srau -->
-        <div class="galeri-item animate-on-scroll">
-          <img src="assets/img/jalanPantaiSrau.jpg" alt="Jalan menuju Pantai Srau, Pacitan" width="600" height="400"
-            loading="lazy">
-          <div class="galeri-item-overlay">
-            <div class="galeri-item-label">
-              Jalan Pantai Srau
-              <span class="galeri-item-sublabel">Pesona jalan menuju pantai</span>
-            </div>
+      <div class="social-spotlight">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer"
+          class="btn-spotlight animate-on-scroll" aria-label="Hubungi via WhatsApp">
+          <div class="btn-spotlight-icon">
+            <img src="assets/img/whatsappLogo.png" alt="WhatsApp" width="48" height="48">
           </div>
-        </div>
+          <div class="btn-spotlight-info">
+            <span class="btn-spotlight-name">WhatsApp</span>
+            <span class="btn-spotlight-desc">Hubungi via WhatsApp</span>
+          </div>
+          <span class="btn-spotlight-arrow">→</span>
+        </a>
 
-        <!-- Item 2 — Pantai Klayar -->
-        <div class="galeri-item animate-on-scroll delay-1">
-          <img src="assets/img/pantaiKlayar.jpg" alt="Pantai Klayar, Pacitan ikon wisata pesisir selatan" width="600"
-            height="400" loading="lazy">
-          <div class="galeri-item-overlay">
-            <div class="galeri-item-label">
-              Pantai Klayar
-              <span class="galeri-item-sublabel">Ikon wisata Pacitan</span>
-            </div>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/kknreguler2026_krajan/" target="_blank" rel="noopener noreferrer"
+          class="btn-spotlight animate-on-scroll delay-1" aria-label="Ikuti Instagram Kami">
+          <div class="btn-spotlight-icon">
+            <img src="assets/img/instagram_logo.png" alt="Instagram" width="48" height="48">
           </div>
-        </div>
+          <div class="btn-spotlight-info">
+            <span class="btn-spotlight-name">Instagram</span>
+            <span class="btn-spotlight-desc">Ikuti Instagram Kami</span>
+          </div>
+          <span class="btn-spotlight-arrow">→</span>
+        </a>
 
-        <!-- Item 3 — Pantai Karang Bolong -->
-        <div class="galeri-item animate-on-scroll delay-2">
-          <img src="assets/img/pantaiKarangBolong.jpg" alt="Pantai Karang Bolong, Pacitan" width="600" height="400"
-            loading="lazy">
-          <div class="galeri-item-overlay">
-            <div class="galeri-item-label">
-              Pantai Karang Bolong
-              <span class="galeri-item-sublabel">Keajaiban batu karang</span>
-            </div>
+        <!-- TikTok -->
+        <a href="http://tiktok.com/@kkn.krajan" target="_blank" rel="noopener noreferrer"
+          class="btn-spotlight animate-on-scroll delay-2" aria-label="Tonton di TikTok">
+          <div class="btn-spotlight-icon">
+            <img src="assets/img/tiktokLogo.png" alt="TikTok" width="48" height="48">
           </div>
-        </div>
-
-        <!-- Item 4 — Pantai Pangasan -->
-        <div class="galeri-item animate-on-scroll delay-3">
-          <img src="assets/img/pantaiPangasan.jpg" alt="Pantai Pangasan, Pacitan pasir putih tersembunyi" width="600"
-            height="400" loading="lazy">
-          <div class="galeri-item-overlay">
-            <div class="galeri-item-label">
-              Pantai Pangasan
-              <span class="galeri-item-sublabel">Hidden paradise Pacitan</span>
-            </div>
+          <div class="btn-spotlight-info">
+            <span class="btn-spotlight-name">TikTok</span>
+            <span class="btn-spotlight-desc">Tonton di TikTok</span>
           </div>
-        </div>
-
-        <!-- Item 5 — Bujang Ganong -->
-        <div class="galeri-item animate-on-scroll delay-4">
-          <img src="assets/img/bujangGanong.jpg" alt="Reog Bujang Ganong seni budaya Jawa Timur" width="600"
-            height="400" loading="lazy">
-          <div class="galeri-item-overlay">
-            <div class="galeri-item-label">
-              Bujang Ganong
-              <span class="galeri-item-sublabel">Warisan budaya Jawa Timur</span>
-            </div>
-          </div>
-        </div>
+          <span class="btn-spotlight-arrow">→</span>
+        </a>
       </div>
 
-      <p class="galeri-tagline animate-on-scroll">
-        <span class="emoji">✨</span> "Oleh-oleh sempurna setelah menikmati keindahan alam Pacitan." <span
-          class="emoji">✨</span>
+      <p class="pesan-tagline animate-on-scroll delay-3">
+        ✨ "Oleh-oleh sempurna setelah menikmati keindahan alam Pacitan." ✨
       </p>
     </div>
   </section>
@@ -281,6 +263,7 @@
             <a href="#profil">Tentang Kami</a>
             <a href="#produk">Produk</a>
             <a href="#galeri">Galeri</a>
+            <a href="#pesan">Pesan</a>
           </div>
         </div>
 
