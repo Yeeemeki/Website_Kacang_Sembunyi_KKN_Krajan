@@ -1039,6 +1039,50 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
+/* Map Container (Google Maps) */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.map-label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+}
+
+.map-wrapper:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(212, 163, 115, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -1342,6 +1386,19 @@ h1, h2, h3, h4, h5, h6 {
 
   .galeri-item-overlay {
     padding: var(--space-md);
+  }
+
+  /* Map responsive on mobile */
+  .map-container {
+    margin-top: var(--space-lg);
+  }
+
+  .map-wrapper {
+    border-radius: var(--radius-md);
+  }
+
+  .map-wrapper iframe {
+    height: 200px;
   }
 }
 
